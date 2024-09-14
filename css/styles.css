@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e0e0;
+    background: linear-gradient(145deg, #d4d4d4, #e0e0e0);
+    overflow-x: hidden;
+    flex-direction: column;
+}
+i.ri-download-cloud-line{
+    -webkit-text-stroke: 1px; /* Adjust the pixel value as needed */
+  }
+  
+i.fab.fa-whatsapp {
+    -webkit-text-stroke: 1px; /* Adjust the pixel value as needed */
+  }
+  
+
+.profile-card {
+    background: #e0e0e0;
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 90%;
+    max-width: 350px;
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin: 20px 0;
+}
+
+.profile-card:hover {
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+}
+
+.profile-image {
+    margin-bottom: 10px;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.profile-image img:hover {
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+    transform: scale(1.09);
+}
+
+.profile-info .name {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.profile-info .name:hover {
+    color: #000;
+}
+
+.profile-info .job-title {
+    font-size: 1.1em;
+    color: #555;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.profile-info .job-title:hover {
+    color: #555;
+}
+
+.profile-info .bio {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 20px;
+    transition: color 3s ease;
+}
+
+.profile-info .bio:hover {
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.neuphormic-button {
+    background: #e0e0e0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+}
+
+.neuphormic-button i {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.neuphormic-button:hover {
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+    transform: translateY(-3px);
+    color: rgb(0, 176, 240);
+}
+
+/* Optional smaller button version with adjusted size */
+.neuphormic-button-small {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2em;
+}
+
+
+.collapsible-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.collapsible {
+    background: #e0e0e0;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+    font-size: 1em;
+    color: #333;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    border: none;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.collapsible:hover {
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+    transform: translateY(-3px);
+    color: #000;
+}
+
+.collapsible:after {
+    content: '\002B';
+    font-size: 1.2em;
+    float: right;
+}
+
+.collapsible.active:after {
+    content: '\2212';
+}
+
+.content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+.content p{
+    padding: 10px;
+    margin: 0;
+
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .profile-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-card {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .profile-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    
+}
